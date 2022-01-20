@@ -13,6 +13,10 @@
 		67F3290D27990D830035FA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F3290B27990D830035FA84 /* Main.storyboard */; };
 		67F3290F27990D840035FA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F3290E27990D840035FA84 /* Assets.xcassets */; };
 		67F3291227990D840035FA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F3291027990D840035FA84 /* LaunchScreen.storyboard */; };
+		67F3291B279928AC0035FA84 /* MobilliumBuilders in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3291A279928AC0035FA84 /* MobilliumBuilders */; };
+		67F3291E279928B60035FA84 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3291D279928B60035FA84 /* TinyConstraints */; };
+		67F329212799296F0035FA84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 67F329202799296F0035FA84 /* Kingfisher */; };
+		67F3292527992C040035FA84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3292427992C040035FA84 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F329212799296F0035FA84 /* Kingfisher in Frameworks */,
+				67F3292527992C040035FA84 /* Alamofire in Frameworks */,
+				67F3291B279928AC0035FA84 /* MobilliumBuilders in Frameworks */,
+				67F3291E279928B60035FA84 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67F3291627990D840035FA84 /* Build configuration list for PBXNativeTarget "Week14-Random" */;
 			buildPhases = (
+				67F3292227992A180035FA84 /* Run SwiftLint */,
 				67F328FE27990D830035FA84 /* Sources */,
 				67F328FF27990D830035FA84 /* Frameworks */,
 				67F3290027990D830035FA84 /* Resources */,
@@ -83,6 +92,12 @@
 			dependencies = (
 			);
 			name = "Week14-Random";
+			packageProductDependencies = (
+				67F3291A279928AC0035FA84 /* MobilliumBuilders */,
+				67F3291D279928B60035FA84 /* TinyConstraints */,
+				67F329202799296F0035FA84 /* Kingfisher */,
+				67F3292427992C040035FA84 /* Alamofire */,
+			);
 			productName = "Week14-Random";
 			productReference = 67F3290227990D830035FA84 /* Week14-Random.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +126,12 @@
 				Base,
 			);
 			mainGroup = 67F328F927990D830035FA84;
+			packageReferences = (
+				67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */,
+				67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 67F3290327990D830035FA84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +153,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67F3292227992A180035FA84 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint; then\n    swiftlint autocorrect && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67F328FE27990D830035FA84 /* Sources */ = {
@@ -360,6 +402,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobillium/MobilliumBuilders.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67F3291A279928AC0035FA84 /* MobilliumBuilders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */;
+			productName = MobilliumBuilders;
+		};
+		67F3291D279928B60035FA84 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+		67F329202799296F0035FA84 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		67F3292427992C040035FA84 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67F328FA27990D830035FA84 /* Project object */;
 }
