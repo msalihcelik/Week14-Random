@@ -10,10 +10,10 @@ import MobilliumBuilders
 import TinyConstraints
 import Alamofire
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     private let tableView = UITableViewBuilder().build()
-    var photoUrls = [String]()
+    private var photoUrls = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         getPhotos()
     }
 
-    func getPhotos() {
+    private func getPhotos() {
         let group = DispatchGroup()
 
         // Parent

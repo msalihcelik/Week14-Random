@@ -35,7 +35,7 @@ class ImageTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func addSubViews() {
+    private func addSubViews() {
         self.addSubview(customImageView)
         customImageView.edgesToSuperview(excluding: .bottom)
         customImageView.bottomToSuperview().constant = -5

@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 26.01.2022.
 //
 
-import Foundation
-
 struct CellIdentifier {
     static let myCell = "myCell"
 }
