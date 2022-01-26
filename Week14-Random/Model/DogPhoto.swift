@@ -5,6 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 21.01.2022.
 //
 
-struct DogPhoto: Decodable {
+struct DogPhoto: Codable {
     let url: String
 }

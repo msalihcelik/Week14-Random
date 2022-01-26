@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67AF0F7A27A0F0FA009F6DED /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF0F7927A0F0FA009F6DED /* CellIdentifier.swift */; };
+		67AF0F7F27A15EE6009F6DED /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF0F7E27A15EE6009F6DED /* Service.swift */; };
 		67F3290627990D830035FA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290527990D830035FA84 /* AppDelegate.swift */; };
 		67F3290827990D830035FA84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290727990D830035FA84 /* SceneDelegate.swift */; };
 		67F3290A27990D830035FA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290927990D830035FA84 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		67AF0F7927A0F0FA009F6DED /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
+		67AF0F7E27A15EE6009F6DED /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		67F3290227990D830035FA84 /* Week14-Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week14-Random.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F3290527990D830035FA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F3290727990D830035FA84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AF0F7D27A15EDC009F6DED /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				67AF0F7E27A15EE6009F6DED /* Service.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		67F328F927990D830035FA84 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		67F3290427990D830035FA84 /* Week14-Random */ = {
 			isa = PBXGroup;
 			children = (
+				67AF0F7D27A15EDC009F6DED /* WebService */,
 				67F32937279A98A60035FA84 /* Utilities */,
 				67F32936279A987E0035FA84 /* Scenes */,
 				67F32933279A98570035FA84 /* Cell */,
@@ -269,6 +280,7 @@
 				67F32927279A3A760035FA84 /* ImageTableViewCell.swift in Sources */,
 				67F3290627990D830035FA84 /* AppDelegate.swift in Sources */,
 				67F32931279A95610035FA84 /* PhotoUrl.swift in Sources */,
+				67AF0F7F27A15EE6009F6DED /* Service.swift in Sources */,
 				67AF0F7A27A0F0FA009F6DED /* CellIdentifier.swift in Sources */,
 				67F3290827990D830035FA84 /* SceneDelegate.swift in Sources */,
 			);

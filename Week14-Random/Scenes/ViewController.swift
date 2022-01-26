@@ -11,46 +11,40 @@ import TinyConstraints
 import Alamofire
 
 final class ViewController: UIViewController {
-
+    
     private let tableView = UITableViewBuilder().build()
     private var photoUrls = [String]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
         addSubViews()
         getPhotos()
     }
-
+    
     private func getPhotos() {
         let group = DispatchGroup()
-
-        // Parent
         group.enter()
         for _ in 1...5 {
-            // Child1
             group.enter()
-            AF.request(PhotoUrl.cat, method: .get).response { responseData in
+            Service.shared.getData(url: PhotoUrl.cat, type: CatPhoto.self) { result in
                 group.leave()
-                guard let data = responseData.data else { return }
-                do {
-                    let catPhoto = try JSONDecoder().decode(CatPhoto.self, from: data)
-                    self.photoUrls.append(catPhoto.file)
-                } catch {
-                    print("error", error)
+                switch result {
+                case .success(let response):
+                    self.photoUrls.append(response.file)
+                case .failure(let error):
+                    print(error)
                 }
             }
-
-            // Child2
+            
             group.enter()
-            AF.request(PhotoUrl.dog, method: .get).response { responseData in
+            Service.shared.getData(url: PhotoUrl.dog, type: DogPhoto.self) { result in
                 group.leave()
-                guard let data = responseData.data else { return }
-                do {
-                    let dogPhoto = try JSONDecoder().decode(DogPhoto.self, from: data)
-                    self.photoUrls.append(dogPhoto.url)
-                } catch {
-                    print("error", error)
+                switch result {
+                case .success(let response):
+                    self.photoUrls.append(response.url)
+                case .failure(let error):
+                    print(error)
                 }
             }
         }
@@ -64,7 +58,7 @@ final class ViewController: UIViewController {
 
 // MARK: - SubViews
 extension ViewController {
-
+    
     private func addSubViews() {
         view.addSubview(tableView)
         tableView.delegate = self
@@ -77,15 +71,15 @@ extension ViewController {
 // MARK: - TableViewDelegate & TableViewDataSource Methods
 extension ViewController: UITableViewDelegate { }
 extension ViewController: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (view.frame.height - (view.safeAreaInsets.top + view.safeAreaInsets.bottom)) / 3
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return photoUrls.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.myCell, for: indexPath) as? ImageTableViewCell {
             cell.customImageView.configureKF(url: self.photoUrls[indexPath.row])
