@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67AF0F7A27A0F0FA009F6DED /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF0F7927A0F0FA009F6DED /* CellIdentifier.swift */; };
+		67AF0F7F27A15EE6009F6DED /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF0F7E27A15EE6009F6DED /* Service.swift */; };
 		67F3290627990D830035FA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290527990D830035FA84 /* AppDelegate.swift */; };
 		67F3290827990D830035FA84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290727990D830035FA84 /* SceneDelegate.swift */; };
 		67F3290A27990D830035FA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3290927990D830035FA84 /* ViewController.swift */; };
 		67F3290D27990D830035FA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F3290B27990D830035FA84 /* Main.storyboard */; };
 		67F3290F27990D840035FA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F3290E27990D840035FA84 /* Assets.xcassets */; };
 		67F3291227990D840035FA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F3291027990D840035FA84 /* LaunchScreen.storyboard */; };
+		67F3291B279928AC0035FA84 /* MobilliumBuilders in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3291A279928AC0035FA84 /* MobilliumBuilders */; };
+		67F3291E279928B60035FA84 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3291D279928B60035FA84 /* TinyConstraints */; };
+		67F329212799296F0035FA84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 67F329202799296F0035FA84 /* Kingfisher */; };
+		67F3292527992C040035FA84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 67F3292427992C040035FA84 /* Alamofire */; };
+		67F32927279A3A760035FA84 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32926279A3A760035FA84 /* ImageTableViewCell.swift */; };
+		67F32929279A92320035FA84 /* DogPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32928279A92320035FA84 /* DogPhoto.swift */; };
+		67F3292B279A93040035FA84 /* CatPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3292A279A93040035FA84 /* CatPhoto.swift */; };
+		67F3292E279A94C00035FA84 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3292D279A94C00035FA84 /* UIImage+Extensions.swift */; };
+		67F32931279A95610035FA84 /* PhotoUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32930279A95610035FA84 /* PhotoUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67AF0F7927A0F0FA009F6DED /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
+		67AF0F7E27A15EE6009F6DED /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		67F3290227990D830035FA84 /* Week14-Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week14-Random.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F3290527990D830035FA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F3290727990D830035FA84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,11 @@
 		67F3290E27990D840035FA84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F3291127990D840035FA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67F3291327990D840035FA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F32926279A3A760035FA84 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		67F32928279A92320035FA84 /* DogPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPhoto.swift; sourceTree = "<group>"; };
+		67F3292A279A93040035FA84 /* CatPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPhoto.swift; sourceTree = "<group>"; };
+		67F3292D279A94C00035FA84 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		67F32930279A95610035FA84 /* PhotoUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +49,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F329212799296F0035FA84 /* Kingfisher in Frameworks */,
+				67F3292527992C040035FA84 /* Alamofire in Frameworks */,
+				67F3291B279928AC0035FA84 /* MobilliumBuilders in Frameworks */,
+				67F3291E279928B60035FA84 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AF0F7D27A15EDC009F6DED /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				67AF0F7E27A15EE6009F6DED /* Service.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		67F328F927990D830035FA84 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +86,86 @@
 		67F3290427990D830035FA84 /* Week14-Random */ = {
 			isa = PBXGroup;
 			children = (
-				67F3290527990D830035FA84 /* AppDelegate.swift */,
-				67F3290727990D830035FA84 /* SceneDelegate.swift */,
-				67F3290927990D830035FA84 /* ViewController.swift */,
-				67F3290B27990D830035FA84 /* Main.storyboard */,
-				67F3290E27990D840035FA84 /* Assets.xcassets */,
-				67F3291027990D840035FA84 /* LaunchScreen.storyboard */,
+				67AF0F7D27A15EDC009F6DED /* WebService */,
+				67F32937279A98A60035FA84 /* Utilities */,
+				67F32936279A987E0035FA84 /* Scenes */,
+				67F32933279A98570035FA84 /* Cell */,
+				67F32932279A984E0035FA84 /* Model */,
+				67F32935279A98700035FA84 /* View */,
+				67F32934279A98600035FA84 /* Resources */,
 				67F3291327990D840035FA84 /* Info.plist */,
 			);
 			path = "Week14-Random";
+			sourceTree = "<group>";
+		};
+		67F3292C279A94A80035FA84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67F3292D279A94C00035FA84 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67F3292F279A94FF0035FA84 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				67F32930279A95610035FA84 /* PhotoUrl.swift */,
+				67AF0F7927A0F0FA009F6DED /* CellIdentifier.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		67F32932279A984E0035FA84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F32928279A92320035FA84 /* DogPhoto.swift */,
+				67F3292A279A93040035FA84 /* CatPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67F32933279A98570035FA84 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				67F32926279A3A760035FA84 /* ImageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		67F32934279A98600035FA84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67F3290E27990D840035FA84 /* Assets.xcassets */,
+				67F3290527990D830035FA84 /* AppDelegate.swift */,
+				67F3290727990D830035FA84 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67F32935279A98700035FA84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F3290B27990D830035FA84 /* Main.storyboard */,
+				67F3291027990D840035FA84 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F32936279A987E0035FA84 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				67F3290927990D830035FA84 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		67F32937279A98A60035FA84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				67F3292F279A94FF0035FA84 /* Constants */,
+				67F3292C279A94A80035FA84 /* Extensions */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67F3291627990D840035FA84 /* Build configuration list for PBXNativeTarget "Week14-Random" */;
 			buildPhases = (
+				67F3292227992A180035FA84 /* Run SwiftLint */,
 				67F328FE27990D830035FA84 /* Sources */,
 				67F328FF27990D830035FA84 /* Frameworks */,
 				67F3290027990D830035FA84 /* Resources */,
@@ -83,6 +185,12 @@
 			dependencies = (
 			);
 			name = "Week14-Random";
+			packageProductDependencies = (
+				67F3291A279928AC0035FA84 /* MobilliumBuilders */,
+				67F3291D279928B60035FA84 /* TinyConstraints */,
+				67F329202799296F0035FA84 /* Kingfisher */,
+				67F3292427992C040035FA84 /* Alamofire */,
+			);
 			productName = "Week14-Random";
 			productReference = 67F3290227990D830035FA84 /* Week14-Random.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +219,12 @@
 				Base,
 			);
 			mainGroup = 67F328F927990D830035FA84;
+			packageReferences = (
+				67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */,
+				67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 67F3290327990D830035FA84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,13 +247,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67F3292227992A180035FA84 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint; then\n    swiftlint autocorrect && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67F328FE27990D830035FA84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67F3290A27990D830035FA84 /* ViewController.swift in Sources */,
+				67F3292B279A93040035FA84 /* CatPhoto.swift in Sources */,
+				67F32929279A92320035FA84 /* DogPhoto.swift in Sources */,
+				67F3292E279A94C00035FA84 /* UIImage+Extensions.swift in Sources */,
+				67F32927279A3A760035FA84 /* ImageTableViewCell.swift in Sources */,
 				67F3290627990D830035FA84 /* AppDelegate.swift in Sources */,
+				67F32931279A95610035FA84 /* PhotoUrl.swift in Sources */,
+				67AF0F7F27A15EE6009F6DED /* Service.swift in Sources */,
+				67AF0F7A27A0F0FA009F6DED /* CellIdentifier.swift in Sources */,
 				67F3290827990D830035FA84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +502,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobillium/MobilliumBuilders.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67F3291A279928AC0035FA84 /* MobilliumBuilders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F32919279928AC0035FA84 /* XCRemoteSwiftPackageReference "MobilliumBuilders" */;
+			productName = MobilliumBuilders;
+		};
+		67F3291D279928B60035FA84 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3291C279928B60035FA84 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+		67F329202799296F0035FA84 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3291F2799296F0035FA84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		67F3292427992C040035FA84 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F3292327992C040035FA84 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67F328FA27990D830035FA84 /* Project object */;
 }
